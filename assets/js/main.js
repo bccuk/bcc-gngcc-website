@@ -34,7 +34,7 @@
             e.preventDefault();
 
             const btn = form.querySelector('[type="submit"]');
-            const successMsg = form.nextElementSibling;
+            const successMsg = form.parentElement ? form.parentElement.querySelector('.form-success') : null;
             const originalText = btn ? btn.innerHTML : '';
 
             if (btn) {
