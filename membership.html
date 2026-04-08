@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us | GNG Cricket Club</title>
+    <meta name="description" content="Become a member of GNG Cricket Club. Social membership from £50/year, playing membership from £200/year. Join us in Gravesend, Kent." />
+    <meta property="og:title" content="Join Us | GNG Cricket Club" />
+    <meta property="og:description" content="Membership options for GNG Cricket Club — Social (£50/year) and Playing (£200/year + £10 match fees)." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#410003', 'primary-container': '#630e0e', 'on-primary': '#ffffff',
+                        'secondary': '#735c00', 'secondary-fixed': '#ffe088', 'secondary-container': '#fed65b',
+                        'on-secondary': '#ffffff', 'on-secondary-container': '#745c00',
+                        'background': '#fcf8f8', 'surface': '#fcf8f8', 'surface-bright': '#fcf8f8',
+                        'surface-container-lowest': '#ffffff', 'surface-container-low': '#f6f3f2',
+                        'surface-container': '#f1edec', 'surface-container-high': '#ebe7e7',
+                        'surface-container-highest': '#e5e2e1', 'surface-dim': '#ddd9d9',
+                        'surface-variant': '#e5e2e1', 'on-surface': '#1c1b1b',
+                        'on-surface-variant': '#564240', 'on-background': '#1c1b1b',
+                        'outline': '#8a716f', 'outline-variant': '#ddc0bd',
+                        'primary-fixed': '#ffdad6', 'primary-fixed-dim': '#ffb4ac',
+                        'on-primary-fixed': '#410003', 'on-primary-container': '#ec756b',
+                        'secondary-fixed-dim': '#e9c349', 'surface-tint': '#a23d36',
+                    },
+                    borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' },
+                    fontFamily: { 'headline': ['Lexend', 'sans-serif'], 'body': ['Plus Jakarta Sans', 'sans-serif'] },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L1MZ7V119"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4L1MZ7V119', {
+            page_path: window.location.pathname,
+        });
+    </script>
+</head>
+<body class="bg-background text-on-background font-body antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header id="site-header" class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/30 transition-shadow duration-300">
+        <nav class="flex justify-between items-center px-6 md:px-8 h-20 max-w-7xl mx-auto w-full">
+            <a href="index.html" class="text-xl md:text-2xl font-black text-primary font-headline tracking-tight uppercase">GNG Cricket Club</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="sponsorship.html" class="nav-link">Sponsorship</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="membership.html" class="btn-primary hidden sm:inline-flex" style="background-color:#630e0e">Join Us</a>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-primary" aria-label="Toggle menu">
+                    <span id="menu-icon-open" class="material-symbols-outlined">menu</span>
+                    <span id="menu-icon-close" class="material-symbols-outlined" style="display:none">close</span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden glass-nav border-t border-outline-variant/20 px-6 py-6">
+            <div class="flex flex-col gap-5">
+                <a href="about.html" class="nav-link text-base">About</a>
+                <a href="team.html" class="nav-link text-base">Team</a>
+                <a href="contact.html" class="nav-link text-base">Contact</a>
+                <a href="sponsorship.html" class="nav-link text-base">Sponsorship</a>
+                <a href="membership.html" class="btn-primary justify-center mt-2">Join Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- ── Hero ───────────────────────────────────────────────── -->
+        <section class="relative min-h-[500px] flex items-center overflow-hidden bg-primary">
+            <div class="absolute inset-0 opacity-40">
+                <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFwlL50yuKQXXkzdX7Og9f0hjryX9e-_QMcr6FSrVoKEEpTM8DpIFiQKfl7_z4NJ4u26Frq1uMvkINyYglYWhynj05Hk5zDpMzP4ecdv5FQcDnOAAZK31uzyFaEJptfcssZL0XWBTt25FF-VDqAWRxTMaHAXmjh77udTtqYp5MmItCZSjE1OX2txVQSLtu1CHUmCqcKW7dvNbesdjTQWKnFJpnUsF9EmZuwNZlTkCwrTH4f5C5bzE6rjp2ZjkcY6Rq5KlnXDhNSfw"
+                    alt="Cricket field at dawn"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+            <div class="relative max-w-7xl mx-auto px-6 md:px-8 py-20 w-full text-center">
+                <span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-black mb-6 tracking-widest uppercase border border-secondary/20">
+                    Join The Heritage
+                </span>
+                <h1 class="text-5xl md:text-7xl font-headline font-black text-white leading-tight mb-8">
+                    Become Part Of<br /><span class="text-secondary-fixed">The Legacy.</span>
+                </h1>
+                <p class="text-xl text-primary-fixed leading-relaxed mb-10 opacity-90 max-w-2xl mx-auto">
+                    Select your membership level and start your journey with GNG Cricket Club. Professional coaching, competitive cricket, and a vibrant community await.
+                </p>
+                <a href="#plans" class="btn-gold text-base px-10 py-4 inline-flex items-center gap-3">
+                    View Membership Tiers
+                    <span class="material-symbols-outlined">expand_more</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ── Membership Tiers ───────────────────────────────────── -->
+        <section class="py-24 bg-surface px-6 md:px-8" id="plans">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-headline font-black text-primary mb-4">Membership Tiers</h2>
+                    <div class="h-1.5 w-24 bg-secondary mx-auto rounded-full mb-6"></div>
+                    <p class="text-lg text-on-surface-variant max-w-2xl mx-auto">Curated membership options designed for players and supporters alike.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Social -->
+                    <div class="group relative bg-white rounded-3xl p-8 transition-all hover:shadow-2xl border border-outline-variant/50 flex flex-col">
+                        <div class="mb-8">
+                            <span class="text-on-surface-variant font-black text-xs tracking-widest uppercase">Supportive</span>
+                            <h3 class="text-2xl font-headline font-bold text-primary mt-2">Social Member</h3>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-4xl font-black text-primary">£50</span>
+                                <span class="text-on-surface-variant font-medium">/annual</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant mt-2 font-medium">No match fees</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold">check</span><span class="text-on-surface">Club House Access</span></li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold">check</span><span class="text-on-surface">Voting Rights at AGM</span></li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold">check</span><span class="text-on-surface">Exclusive Member Events</span></li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold">check</span><span class="text-on-surface">10% Bar &amp; Café Discount</span></li>
+                        </ul>
+                        <a href="#register" class="w-full text-center bg-surface-container-high text-primary py-4 rounded-xl font-bold hover:bg-outline-variant transition-colors block">Select Plan</a>
+                    </div>
+
+                    <!-- Playing – Most Popular -->
+                    <div class="group relative bg-white rounded-3xl p-8 transition-all hover:shadow-2xl border-2 border-secondary flex flex-col scale-105 shadow-xl shadow-secondary/5 z-10">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white px-6 py-1 rounded-full text-xs font-black tracking-widest">MOST POPULAR</div>
+                        <div class="mb-8">
+                            <span class="text-secondary font-black text-xs tracking-widest uppercase">Elite Competitive</span>
+                            <h3 class="text-2xl font-headline font-bold text-primary mt-2">Playing Member</h3>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-5xl font-black text-primary">£200</span>
+                                <span class="text-on-surface-variant font-medium">/annual</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant mt-2 font-medium">+ £10 match fees per game</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold" style="font-variation-settings:'FILL' 1;">check_circle</span><span class="text-on-surface font-semibold">Full Season Match Eligibility</span></li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold" style="font-variation-settings:'FILL' 1;">check_circle</span><span class="text-on-surface font-semibold">Official Club Clothing Kit</span></li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold" style="font-variation-settings:'FILL' 1;">check_circle</span><span class="text-on-surface font-semibold">Weekly Professional Coaching</span></li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary font-bold" style="font-variation-settings:'FILL' 1;">check_circle</span><span class="text-on-surface font-semibold">24/7 Gym &amp; Nets Access</span></li>
+                        </ul>
+                        <a href="#register" class="w-full text-center bg-primary text-white py-4 rounded-xl font-bold hover:bg-primary-container transition-all premium-shadow block">Join the Squad</a>
+                    </div>
+
+                    <!-- Corporate/Sponsor -->
+                    <div class="relative bg-primary rounded-3xl p-8 flex flex-col overflow-hidden border border-primary/20">
+                        <div class="absolute top-0 right-0 p-6">
+                            <span class="material-symbols-outlined text-secondary-fixed text-6xl opacity-10">workspace_premium</span>
+                        </div>
+                        <div class="mb-8 relative z-10">
+                            <span class="text-secondary-fixed font-black text-xs tracking-widest uppercase">Business Excellence</span>
+                            <h3 class="text-2xl font-headline font-bold text-white mt-2">Sponsorship</h3>
+                        </div>
+                        <div class="mb-8 relative z-10">
+                            <span class="text-4xl font-black text-white">Bespoke</span>
+                            <p class="text-sm text-primary-fixed-dim mt-2 font-medium">Strategic Club Partnership</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow relative z-10">
+                            <li class="flex items-start gap-3 text-white"><span class="material-symbols-outlined text-secondary-fixed font-bold">verified</span><span>Ground Signage Branding</span></li>
+                            <li class="flex items-start gap-3 text-white"><span class="material-symbols-outlined text-secondary-fixed font-bold">verified</span><span>Match Day VIP Hosting</span></li>
+                            <li class="flex items-start gap-3 text-white"><span class="material-symbols-outlined text-secondary-fixed font-bold">verified</span><span>Digital &amp; Social Ad Placement</span></li>
+                        </ul>
+                        <a href="sponsorship.html" class="w-full text-center bg-secondary-fixed text-on-secondary-container py-4 rounded-xl font-bold hover:bg-secondary-container transition-all relative z-10 block">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── How to Join ─────────────────────────────────────────── -->
+        <section class="py-24 bg-surface-container-low px-6 md:px-8 border-y border-outline-variant/30">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-headline font-black text-primary mb-4">How To Join</h2>
+                    <p class="text-lg text-on-surface-variant max-w-2xl mx-auto">Membership made simple. Three steps to becoming part of GNG's rich history.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                    <div class="hidden md:block absolute top-10 left-[20%] right-[20%] h-0.5 bg-outline-variant/50 z-0"></div>
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-6 border-2 border-surface-container-high hover:border-secondary transition-all">
+                            <span class="text-2xl font-headline font-black text-secondary">01</span>
+                        </div>
+                        <h4 class="text-xl font-headline font-bold text-primary mb-3">Register Details</h4>
+                        <p class="text-on-surface-variant text-sm px-4">Complete our secure online form with your personal and playing information.</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-6 border-2 border-surface-container-high hover:border-secondary transition-all">
+                            <span class="text-2xl font-headline font-black text-secondary">02</span>
+                        </div>
+                        <h4 class="text-xl font-headline font-bold text-primary mb-3">Confirm Tier</h4>
+                        <p class="text-on-surface-variant text-sm px-4">Select your preferred membership level and process the annual fee.</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-6 border-2 border-surface-container-high hover:border-secondary transition-all">
+                            <span class="text-2xl font-headline font-black text-secondary">03</span>
+                        </div>
+                        <h4 class="text-xl font-headline font-bold text-primary mb-3">Welcome Kit</h4>
+                        <p class="text-on-surface-variant text-sm px-4">Receive your membership pack and join us for your first session at the Pavilion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Registration Form ──────────────────────────────────── -->
+        <section class="py-24 px-6 md:px-8 bg-surface-bright" id="register">
+            <div class="max-w-6xl mx-auto bg-white rounded-[2rem] shadow-2xl shadow-primary/5 overflow-hidden border border-outline-variant/30 flex flex-col lg:flex-row">
+
+                <!-- Form -->
+                <div class="flex-1 p-10 md:p-16 lg:p-20">
+                    <div class="mb-10">
+                        <h2 class="text-4xl font-headline font-black text-primary mb-4">Registration</h2>
+                        <p class="text-on-surface-variant font-medium">Our membership secretary will be in touch shortly after submission.</p>
+                    </div>
+
+                    <form
+                        class="space-y-6"
+                        action="https://formspree.io/f/mreodjjv"
+                        method="POST"
+                        data-formspree
+                        novalidate
+                    >
+                        <!-- Hidden identifier so Formspree emails are clearly labelled -->
+                        <input type="hidden" name="form_name" value="GNG Membership" />
+
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-black text-primary uppercase tracking-widest" for="name">Full Name *</label>
+                            <input class="form-input" id="name" name="name" type="text" placeholder="Your full name" required />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-black text-primary uppercase tracking-widest" for="email">Email Address *</label>
+                            <input class="form-input" id="email" name="email" type="email" placeholder="hello@example.com" required />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-black text-primary uppercase tracking-widest" for="phone">Phone Number</label>
+                            <input class="form-input" id="phone" name="phone" type="tel" placeholder="+44 7700 000000" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-black text-primary uppercase tracking-widest" for="membership">Membership Type *</label>
+                            <div class="relative">
+                                <select class="form-input appearance-none pr-10" id="membership" name="membership_type" required>
+                                    <option value="">Select a membership type</option>
+                                    <option value="Playing Member (£200/year)">Playing Member (£200/year)</option>
+                                    <option value="Social Member (£50/year)">Social Member (£50/year)</option>
+                                    <option value="Sponsorship Enquiry">Sponsorship Enquiry</option>
+                                </select>
+                                <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">unfold_more</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-black text-primary uppercase tracking-widest" for="experience">Playing Experience</label>
+                            <div class="relative">
+                                <select class="form-input appearance-none pr-10" id="experience" name="experience">
+                                    <option value="">Select experience level</option>
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                </select>
+                                <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">unfold_more</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-black text-primary uppercase tracking-widest" for="message">Message (optional)</label>
+                            <textarea class="form-input resize-none" id="message" name="message" rows="4" placeholder="Tell us a bit about yourself…"></textarea>
+                        </div>
+                        <div class="flex items-center gap-3 py-1">
+                            <input class="w-5 h-5 rounded border-outline-variant text-secondary focus:ring-secondary" id="agree" name="agree" type="checkbox" required />
+                            <label class="text-sm text-on-surface-variant font-medium" for="agree">I agree to the Club Rules and Privacy Policy.</label>
+                        </div>
+                        <button class="w-full bg-primary text-white py-5 rounded-2xl font-black text-lg hover:bg-primary-container shadow-xl shadow-primary/20 transition-all active:scale-[0.98] hover:-translate-y-0.5 transform" type="submit">
+                            Submit Registration
+                        </button>
+                    </form>
+
+                    <!-- Success message (shown after Formspree submission) -->
+                    <div class="form-success mt-6">
+                        <p class="font-bold text-primary mb-1">Registration received!</p>
+                        <p class="text-on-surface-variant text-sm">Thank you for registering with GNG Cricket Club. Amaritpal will be in touch with you shortly.</p>
+                    </div>
+                </div>
+
+                <!-- Side panel -->
+                <div class="hidden lg:block lg:w-5/12 relative bg-primary overflow-hidden">
+                    <img
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Hb5SlyoVQEpZ1JnM5Ynf6vd4DzSicclJCA0u4w6JrCcjHmZYnGM8ehSOqtyehhLvd2H0DI4fMHIpL4SpacmkreKTBo7gIrGiiGIESu9emnS5UkxCtLYW7PXJKRFVQ70BbMvkKd9RRhR2nxMnZXsd621witq3-SeNSaJpcHOvtjU2V7xVBAeDZY3kUFInsvG22gRT8PZeUYIIPrRGa1tZpr79pmNa2K4vBaANH50_rbqGtYj93QNgY5Ucum0TrLPOb-_9ISRWbWg"
+                        alt="Cricket ball on bench"
+                        class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-l from-primary via-primary/20 to-transparent"></div>
+                    <div class="absolute bottom-12 left-12 right-12 text-white">
+                        <p class="text-sm font-bold mb-4 opacity-70">Join 500+ local members</p>
+                        <p class="text-lg font-headline font-bold italic opacity-90">"The best community club in the region. The coaching is transformative."</p>
+                        <p class="mt-4 font-black text-secondary-fixed text-sm">— Club Captain</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="bg-primary-container text-white py-24 px-6 md:px-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
+            <div class="md:col-span-2 space-y-6">
+                <div class="text-2xl font-black font-headline tracking-tighter uppercase">GNG Cricket Club</div>
+                <p class="text-white/60 text-base leading-relaxed max-w-md">Building a community through the spirit of cricket. Established on the principles of equality, courage, and excellence.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/share/1YXYi3n525/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors text-white font-bold text-xs">FB</a>
+                    <a href="https://www.instagram.com/gngcc.grfc?igsh=MXN3cmtyYmhqanA0ag==" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors text-white font-bold text-xs">IG</a>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h6 class="text-secondary-fixed font-black text-xs uppercase tracking-[0.3em]">Navigate</h6>
+                <ul class="space-y-3">
+                    <li><a href="about.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">About</a></li>
+                    <li><a href="team.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">Our Teams</a></li>
+                    <li><a href="membership.html" class="text-white hover:text-secondary-fixed transition-colors text-sm font-bold">Membership</a></li>
+                    <li><a href="sponsorship.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">Sponsorship</a></li>
+                    <li><a href="contact.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">Contact</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <h6 class="text-secondary-fixed font-black text-xs uppercase tracking-[0.3em]">Pavilion Office</h6>
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10 space-y-3">
+                    <div><span class="text-secondary-fixed text-xs font-black block mb-1 uppercase tracking-widest">Ground</span><span class="text-white text-sm">Gravesend, Kent, UK</span></div>
+                    <div><span class="text-secondary-fixed text-xs font-black block mb-1 uppercase tracking-widest">Email</span><a href="mailto:amaritsaini@gmail.com" class="text-white text-sm hover:text-secondary-fixed transition-colors">amaritsaini@gmail.com</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-white/40 text-xs uppercase tracking-widest">© 2026 GNG Cricket Club. All Rights Reserved.</p>
+            <p class="text-white/40 text-xs">Website by Bytecode Consulting</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

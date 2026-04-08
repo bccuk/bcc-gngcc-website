@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | GNG Cricket Club</title>
+    <meta name="description" content="Learn about GNG Cricket Club's history, values, and mission. A community cricket club in Gravesend, Kent, rooted in equality, courage, and excellence." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us | GNG Cricket Club" />
+    <meta property="og:description" content="Learn about GNG Cricket Club's history, values, and mission in Gravesend, Kent." />
+    <meta property="og:type" content="website" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#410003', 'primary-container': '#630e0e', 'on-primary': '#ffffff',
+                        'secondary': '#735c00', 'secondary-fixed': '#ffe088', 'secondary-container': '#fed65b',
+                        'on-secondary': '#ffffff', 'on-secondary-container': '#745c00',
+                        'background': '#fcf8f8', 'surface': '#fcf8f8', 'surface-bright': '#fcf8f8',
+                        'surface-container-lowest': '#ffffff', 'surface-container-low': '#f6f3f2',
+                        'surface-container': '#f1edec', 'surface-container-high': '#ebe7e7',
+                        'surface-container-highest': '#e5e2e1', 'surface-dim': '#ddd9d9',
+                        'surface-variant': '#e5e2e1', 'on-surface': '#1c1b1b',
+                        'on-surface-variant': '#564240', 'on-background': '#1c1b1b',
+                        'outline': '#8a716f', 'outline-variant': '#ddc0bd',
+                        'tertiary': '#002107', 'tertiary-fixed': '#72fe88', 'tertiary-container': '#003911',
+                        'on-tertiary': '#ffffff', 'inverse-surface': '#313030',
+                        'primary-fixed': '#ffdad6', 'primary-fixed-dim': '#ffb4ac',
+                        'on-primary-fixed': '#410003', 'on-primary-container': '#ec756b',
+                        'secondary-fixed-dim': '#e9c349', 'surface-tint': '#a23d36', 'error': '#ba1a1a',
+                    },
+                    borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' },
+                    fontFamily: { 'headline': ['Lexend', 'sans-serif'], 'body': ['Plus Jakarta Sans', 'sans-serif'], 'label': ['Plus Jakarta Sans', 'sans-serif'] },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L1MZ7V119"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4L1MZ7V119', {
+            page_path: window.location.pathname,
+        });
+    </script>
+</head>
+<body class="bg-background text-on-background font-body antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header id="site-header" class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/30 transition-shadow duration-300">
+        <nav class="flex justify-between items-center px-6 md:px-8 h-20 max-w-7xl mx-auto w-full">
+            <a href="index.html" class="text-xl md:text-2xl font-black text-primary font-headline tracking-tight uppercase">GNG Cricket Club</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="sponsorship.html" class="nav-link">Sponsorship</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="membership.html" class="btn-primary hidden sm:inline-flex">Join Us</a>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-primary" aria-label="Toggle menu">
+                    <span id="menu-icon-open" class="material-symbols-outlined">menu</span>
+                    <span id="menu-icon-close" class="material-symbols-outlined" style="display:none">close</span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden glass-nav border-t border-outline-variant/20 px-6 py-6">
+            <div class="flex flex-col gap-5">
+                <a href="about.html" class="nav-link active text-base">About</a>
+                <a href="team.html" class="nav-link text-base">Team</a>
+                <a href="contact.html" class="nav-link text-base">Contact</a>
+                <a href="sponsorship.html" class="nav-link text-base">Sponsorship</a>
+                <a href="membership.html" class="btn-primary justify-center mt-2">Join Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- ── Hero ───────────────────────────────────────────────── -->
+        <section class="relative h-[80vh] min-h-[560px] flex items-center overflow-hidden bg-primary">
+            <div class="absolute inset-0 z-0">
+                <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA36RprCmgZhFx5-Xhd8pmTmrXk7NeBACHu7eJYPSEjNoyFejgjq8N69yVsmn_ncBA8AQG-tk569vnzecweK-exRgCo60wNr1Lkr4cjatdw5KM1Sur0hpedzcde4ZDoBWjaJK_zegAn47W1nTt57m5lhH3HNJQihCdJo6VpUsx6wUdIhUoa3UTg6YZ6pkwudN8f-E3itb7YwtIzanHpa_7LB7On-sE9nrrqqQRiQbqzEHzKRSH49ZxZkblqkX8YIN2ZH0BoLIgATmE"
+                    alt="Cricket field at sunrise"
+                    class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 hero-gradient-lr"></div>
+            </div>
+            <div class="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 w-full">
+                <div class="flex flex-col items-start">
+                    <span class="inline-block px-4 py-1.5 bg-secondary text-white text-xs font-black mb-8 tracking-[0.3em] uppercase">Gravesend, Kent</span>
+                    <h1 class="text-6xl md:text-8xl lg:text-9xl font-headline font-black text-white leading-[0.9] mb-8 uppercase tracking-tighter">
+                        Leaving A<br /><span class="text-secondary-fixed">Legacy.</span>
+                    </h1>
+                    <p class="max-w-xl text-lg text-white/80 leading-relaxed font-medium mb-10 border-l-2 border-secondary pl-6">
+                        From local grassroots to the threshold of the Premier League, GNG Cricket Club represents the pinnacle of sporting integrity and community spirit in Kent.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="membership.html" class="btn-gold text-xs px-10 py-4">Join the Club</a>
+                        <a href="team.html" class="btn-outline-white text-xs px-10 py-4">Our Teams</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── History Narrative ──────────────────────────────────── -->
+        <section class="py-32 bg-white">
+            <div class="max-w-[1400px] mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                    <div class="relative">
+                        <div class="aspect-[4/5] bg-surface-container overflow-hidden">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuADA9Axmzxitbwrkhr-toQ2iRu0LvwmKUMOd0xg8GP_F_3g7EdUGO7PljIpzJ4sGzwdb6tz5xXrt17ky-QO2HoYgy73DhkSSxQ0R18wa8NO9ZNgkKTAYG4bX9_UvrR4OMMYdJDL8jsqzWgFqbZopejNm-j2g58I--P0jKrpPRHjETsZ4rLUJXoh8xxMzdi9rMy5P4g2rVJ08UrgM0AXId7NJtrpBF29leGYsYD4JP6wiFEQ2JgWUHyhX4LSORsZLmS_-NWT4RqPGvw"
+                                alt="Vintage cricket equipment"
+                                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out"
+                            />
+                        </div>
+                        <div class="absolute -bottom-10 -right-6 md:-bottom-12 md:-right-12 p-8 md:p-12 bg-primary text-white shadow-2xl hidden md:block">
+                            <div class="text-5xl md:text-6xl font-black font-headline tracking-tighter mb-1">60+</div>
+                            <div class="text-xs font-black text-secondary-fixed uppercase tracking-[0.3em]">Years of Heritage</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:pl-8">
+                        <span class="text-secondary font-black text-xs uppercase tracking-[0.4em] mb-4 block">Our Story</span>
+                        <h2 class="text-4xl md:text-5xl font-headline font-black text-primary mb-10 leading-tight uppercase tracking-tighter">
+                            A Tradition of Excellence
+                        </h2>
+                        <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed font-light">
+                            <p>Founded on the principles of community and athletic excellence, GNG Cricket Club has evolved from a small collective of enthusiasts into a powerhouse of Kent cricket.</p>
+                            <p>Our journey is marked by memorable matches at the Gravesend grounds, where generations of players have honed their skills under the iconic burgundy and gold banner. We've weathered seasons of transition, always emerging stronger and more unified.</p>
+                            <p class="italic text-primary font-medium border-l-4 border-secondary pl-6">"Today, our trophy cabinet reflects our competitive drive, but our real achievement lies in the lasting bonds formed on the pitch."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Values & Mission Bento ─────────────────────────────── -->
+        <section class="py-32 bg-surface-container-low border-y border-outline-variant/30">
+            <div class="max-w-[1400px] mx-auto px-6 md:px-12">
+                <div class="text-center mb-20">
+                    <span class="text-secondary font-black text-xs uppercase tracking-[0.4em] mb-4 block">Foundations</span>
+                    <h2 class="text-4xl md:text-5xl font-headline font-black text-primary uppercase tracking-tighter">The Pavilion Way</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <!-- Motto -->
+                    <div class="md:col-span-2 md:row-span-2 bg-primary p-12 md:p-16 flex flex-col justify-between relative group overflow-hidden">
+                        <div class="relative z-10">
+                            <h3 class="text-secondary-fixed text-xs font-black uppercase tracking-[0.3em] mb-6">Motto</h3>
+                            <h4 class="text-4xl md:text-6xl font-headline font-black text-white leading-[0.9] mb-10 uppercase tracking-tighter">Without Fear,<br />Without Hate.</h4>
+                            <p class="text-white/70 text-lg max-w-sm font-light leading-relaxed">Our motto isn't just a phrase; it's our tactical approach. We play aggressively without arrogance, and compete fiercely with absolute respect for our opponents.</p>
+                        </div>
+                        <div class="mt-12 relative z-10">
+                            <a href="contact.html" class="text-secondary-fixed font-headline font-bold text-xs uppercase tracking-[0.2em] border-b border-secondary-fixed/30 pb-2 hover:border-secondary-fixed transition-all">Get In Touch</a>
+                        </div>
+                        <span class="material-symbols-outlined absolute -bottom-16 -right-16 text-[20rem] md:text-[30rem] text-white/5 rotate-12 group-hover:rotate-6 transition-transform duration-1000">shield</span>
+                    </div>
+
+                    <!-- Mission -->
+                    <div class="md:col-span-2 bg-secondary p-12 text-white flex flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined text-4xl mb-6">military_tech</span>
+                            <h4 class="text-2xl font-headline font-black uppercase tracking-tight mb-4">The Mission</h4>
+                            <p class="text-white/80 font-light text-lg">To provide a world-class cricketing environment that nurtures talent from the playground to the Premier League.</p>
+                        </div>
+                        <div class="pt-8 mt-8 border-t border-white/10 flex justify-between items-end">
+                            <div>
+                                <div class="text-xs font-black uppercase tracking-[0.2em] mb-1 opacity-60">Strategic Target</div>
+                                <div class="text-xl font-headline font-black uppercase">Kent Premier League</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Youth Pipeline -->
+                    <div class="bg-white p-10 border border-outline-variant/30 flex flex-col justify-between hover:shadow-xl transition-shadow duration-500">
+                        <div>
+                            <h4 class="text-sm font-headline font-black text-primary uppercase tracking-widest mb-4">Youth Pipeline</h4>
+                            <p class="text-on-surface-variant text-sm font-light leading-relaxed">Investing in the next generation of Gravesend talent through structured coaching and mentorship.</p>
+                        </div>
+                        <div class="mt-8 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-secondary">people</span>
+                                <span class="text-xs font-black text-secondary uppercase tracking-widest">150+ Junior Players</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Community -->
+                    <div class="bg-tertiary p-10 flex flex-col justify-between">
+                        <span class="material-symbols-outlined text-tertiary-fixed text-3xl">diversity_3</span>
+                        <div class="mt-6">
+                            <h4 class="text-sm font-headline font-black text-white uppercase tracking-widest mb-2">Heritage Hub</h4>
+                            <p class="text-white/60 text-sm font-light leading-relaxed">More than a club, we are a family hub for Gravesend residents and cricket lovers across Kent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Competitive Teams ──────────────────────────────────── -->
+        <section class="py-32 bg-white">
+            <div class="max-w-[1400px] mx-auto px-6 md:px-12">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+                    <div class="max-w-2xl">
+                        <span class="text-secondary font-black text-xs uppercase tracking-[0.4em] mb-4 block">The Squads</span>
+                        <h2 class="text-4xl md:text-6xl font-headline font-black text-primary uppercase tracking-tighter leading-none">Competitive<br />Teams</h2>
+                    </div>
+                    <p class="text-on-surface-variant max-w-sm text-lg font-light italic">Maintaining professional standards across three distinct levels of play.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 border border-outline-variant/30">
+                    <!-- 1st XI -->
+                    <div class="group relative border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-primary transition-colors duration-500 overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKNo0bzS1SPl9E_D_wJtz844ITWkRHJA1r6PV-ryonJgvicVP2PfRQBz7gdncqYau5hW-vEXRwD3WgysnTN_DtvJmpIly5LLoNVQUZF-b_n5HWIxxahXmtlTieorps1Mq-yI0qe3aZYToOyg7Si0WOZMSbcnmYRXxGfxbtMDUU348RHLCTtEJLU_bJbpcYrgqxSjdwUnL3AlwKMIdgG_AJJwOHBfmHo_FBLrlniEGTgsmAOAodLshEjmTpXz8J3o6w_SI6XOgjEAU"
+                                alt="1st XI match action"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                            />
+                        </div>
+                        <div class="p-10 md:p-12">
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="text-3xl font-headline font-black text-primary group-hover:text-white uppercase tracking-tighter transition-colors">1st XI</h3>
+                                <span class="text-xs font-black uppercase tracking-widest text-secondary group-hover:text-secondary-fixed transition-colors">Elite Squad</span>
+                            </div>
+                            <p class="text-on-surface-variant group-hover:text-white/70 text-sm leading-relaxed mb-8 font-light transition-colors">Our flagship squad competing in Kent League Division 4. Focused on performance, precision, and promotion.</p>
+                            <div class="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-primary group-hover:text-secondary-fixed transition-colors">
+                                <span class="material-symbols-outlined text-lg">calendar_today</span>
+                                Saturdays, Kent League
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd XI -->
+                    <div class="group relative border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-primary transition-colors duration-500 overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF2U7Qzd1iOr5WffzfnTbr7TOdAiVKH-rNSIdEMOwZHiRGvxpjALrRy7k9ItdPiXtKPBAkpGvdp5Y6oPdCsXMn2MYjr3lD-Qdd3nWPVAVz3TqoYrtDa3HaXrL73GtUNXPHunAj4JUJCRBG5IK4JqE_2FcZeNwkbtFSUQIE5hf08sWUv6YIdpeh-Nh06pWqZ-cXiHLv4QHnazFens_3VdZOOMbGRaSpFY0z9__lyTy8661lUg0-MGfYIqS88scp6eFL-j4CONyNZMU"
+                                alt="2nd XI players huddle"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                            />
+                        </div>
+                        <div class="p-10 md:p-12">
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="text-3xl font-headline font-black text-primary group-hover:text-white uppercase tracking-tighter transition-colors">2nd XI</h3>
+                                <span class="text-xs font-black uppercase tracking-widest text-secondary group-hover:text-secondary-fixed transition-colors">Development</span>
+                            </div>
+                            <p class="text-on-surface-variant group-hover:text-white/70 text-sm leading-relaxed mb-8 font-light transition-colors">A blend of experienced veterans and rising youth prospects, bridging the gap to first-class standards.</p>
+                            <div class="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-primary group-hover:text-secondary-fixed transition-colors">
+                                <span class="material-symbols-outlined text-lg">calendar_today</span>
+                                Saturdays, Regional Div
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sunday Team -->
+                    <div class="group relative hover:bg-primary transition-colors duration-500 overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyo0ADWME7kd9181FhxhDALHZBU5JMOhuC9QKlsMwSlFNR40HNpaptOb2cTK1QeKQMHjET6oTjIAZPfHDBJkJMBYWLOiI-gpVPKX1huYFItXw3ND-v9k3BCeeUTp2762TdzimUaSPdEhfdHq9pVeNNMXYZxSWU-DtGMJRWzH-P4cDxtjV9UkaWmyF6tlNS_NgVN5d2f5-W1EFVLZuWads8Nnu6eHACQewZDTdzwR77uBpr162MrRki3_zZpByNrJnOmmeQG-tH9_s"
+                                alt="Sunday cricket match"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                            />
+                        </div>
+                        <div class="p-10 md:p-12">
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="text-3xl font-headline font-black text-primary group-hover:text-white uppercase tracking-tighter transition-colors">Sunday Team</h3>
+                                <span class="text-xs font-black uppercase tracking-widest text-secondary group-hover:text-secondary-fixed transition-colors">Social Club</span>
+                            </div>
+                            <p class="text-on-surface-variant group-hover:text-white/70 text-sm leading-relaxed mb-8 font-light transition-colors">Competing in the National Cricket League Elite Premier Division. High-intensity Sunday cricket.</p>
+                            <div class="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-primary group-hover:text-secondary-fixed transition-colors">
+                                <span class="material-symbols-outlined text-lg">calendar_today</span>
+                                Sundays, National League
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Winter Training ─────────────────────────────────────── -->
+        <section class="py-32 bg-primary relative overflow-hidden">
+            <div class="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+                    <div class="text-white">
+                        <span class="text-secondary-fixed font-black text-xs uppercase tracking-[0.4em] mb-6 block">Off-Season Training</span>
+                        <h2 class="text-5xl md:text-7xl font-headline font-black mb-10 uppercase tracking-tighter leading-[0.9]">Winter<br />Nets 2025</h2>
+                        <p class="text-white/70 text-xl font-light leading-relaxed mb-12 max-w-lg">Preparation for the season starts in the frost. Join our indoor nets sessions to sharpen your technique and maintain fitness during the off-season.</p>
+
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-6">
+                                <div class="w-14 h-14 bg-secondary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-white">calendar_month</span>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-headline font-black uppercase tracking-tight">Every Sunday</div>
+                                    <div class="text-white/50 text-sm uppercase tracking-widest mt-1">Jan – April | 10:00 – 12:00</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6">
+                                <div class="w-14 h-14 bg-secondary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-white">location_on</span>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-headline font-black uppercase tracking-tight">Gravesend Grammar</div>
+                                    <div class="text-white/50 text-sm uppercase tracking-widest mt-1">Church Walk, Gravesend DA12 2PR</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="membership.html" class="mt-16 btn-outline-white inline-flex px-12 py-5 text-sm">Book Your Session</a>
+                    </div>
+
+                    <div class="relative">
+                        <div class="aspect-square bg-white/5 p-4 border border-white/10">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLri_4mYcNWK67DEV6vQ4c2WLIgnxWmAB2thFvWehexLBVBCbXDEyP-UicWF6Zrmc1qE8CosjXGZJ-BTyllrqbmqei-05HFxL0a-ffBGcZpzVNowxLLMSCwFb0kX2qLUOJoteJcboK74fbOsRqgjQ7QeboJPAH0mTdw3YnPnqa_Edb21lwCNzdrUcz-zkBp3VVdkwHWzwQy7udY2XGk_KccbWklbYU1ZOAC-_mC692IOj9Ri5jC8EpKuE3CD0Nz1fHTWlMU4fD-aA"
+                                alt="Indoor cricket nets facility"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="absolute -top-6 -left-6 bg-secondary text-white px-8 py-4 font-black text-xs uppercase tracking-[0.3em] shadow-2xl">New Members Welcome</div>
+                    </div>
+                </div>
+            </div>
+            <span class="material-symbols-outlined absolute -bottom-40 -right-40 text-[40rem] text-white/5 pointer-events-none">sports_cricket</span>
+        </section>
+
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="bg-primary-container text-white py-24 px-6 md:px-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
+            <div class="md:col-span-2 space-y-6">
+                <div class="text-2xl font-black font-headline tracking-tighter uppercase">GNG Cricket Club</div>
+                <p class="text-white/60 text-base leading-relaxed max-w-md">Building a community through the spirit of cricket. Established on the principles of equality, courage, and excellence.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/share/1YXYi3n525/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors text-white font-bold text-xs">FB</a>
+                    <a href="https://www.instagram.com/gngcc.grfc?igsh=MXN3cmtyYmhqanA0ag==" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors text-white font-bold text-xs">IG</a>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h6 class="text-secondary-fixed font-black text-xs uppercase tracking-[0.3em]">Navigate</h6>
+                <ul class="space-y-3">
+                    <li><a href="about.html" class="text-white hover:text-secondary-fixed transition-colors text-sm font-bold">About</a></li>
+                    <li><a href="team.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">Our Teams</a></li>
+                    <li><a href="membership.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">Membership</a></li>
+                    <li><a href="sponsorship.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">Sponsorship</a></li>
+                    <li><a href="contact.html" class="text-white/60 hover:text-white transition-colors text-sm font-medium">Contact</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <h6 class="text-secondary-fixed font-black text-xs uppercase tracking-[0.3em]">Pavilion Office</h6>
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10 space-y-3">
+                    <div><span class="text-secondary-fixed text-xs font-black block mb-1 uppercase tracking-widest">Ground</span><span class="text-white text-sm">Gravesend, Kent, UK</span></div>
+                    <div><span class="text-secondary-fixed text-xs font-black block mb-1 uppercase tracking-widest">Email</span><a href="mailto:amaritsaini@gmail.com" class="text-white text-sm hover:text-secondary-fixed transition-colors">amaritsaini@gmail.com</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-white/40 text-xs uppercase tracking-widest">© 2026 GNG Cricket Club. All Rights Reserved.</p>
+            <p class="text-white/40 text-xs">Website by Bytecode Consulting</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
