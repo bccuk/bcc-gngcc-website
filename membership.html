@@ -40,16 +40,6 @@
         }
     </script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L1MZ7V119"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-4L1MZ7V119', {
-            page_path: window.location.pathname,
-        });
-    </script>
 </head>
 <body class="bg-background text-on-background font-body antialiased selection:bg-secondary-container selection:text-on-secondary-container">
 
@@ -368,7 +358,16 @@
         </div>
         <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-white/40 text-xs uppercase tracking-widest">© 2026 GNG Cricket Club. All Rights Reserved.</p>
-            <p class="text-white/40 text-xs">Website by Bytecode Consulting</p>
+            <div class="flex flex-wrap items-center justify-center gap-3 text-center">
+                <a href="terms-and-conditions.html" class="footer-legal-link">Terms &amp; Conditions</a>
+                <span class="text-white/20 text-xs">|</span>
+                <a href="privacy-policy.html" class="footer-legal-link">Privacy Policy</a>
+                <span class="text-white/20 text-xs">|</span>
+                <a href="cookie-policy.html" class="footer-legal-link">Cookie Policy</a>
+                <span class="text-white/20 text-xs">|</span>
+                <button type="button" data-cookie-settings class="footer-legal-link footer-legal-button">Cookie Settings</button>
+            </div>
+            <a href="https://bytecodeconsulting.com/" target="_blank" rel="noopener noreferrer" class="text-white/40 text-xs hover:text-white transition-colors">Website by Bytecode Consulting</a>
         </div>
     </footer>
 
