@@ -194,7 +194,7 @@
         if (!('serviceWorker' in navigator)) return;
 
         window.addEventListener('load', function () {
-            navigator.serviceWorker.register('service-worker.js').catch(function () {
+            navigator.serviceWorker.register('./service-worker.js', { scope: './' }).catch(function () {
                 // Keep registration failure silent on this static brochure site.
             });
         });
