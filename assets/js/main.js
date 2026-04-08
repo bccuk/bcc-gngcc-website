@@ -7,6 +7,9 @@
 
     const analyticsId = 'G-4L1MZ7V119';
     const cookieConsentKey = 'gng_cookie_consent';
+    const installBannerDismissedKey = 'gng_install_banner_dismissed_at';
+    const installBannerCooldownMs = 1000 * 60 * 60 * 24 * 7;
+    let deferredInstallPrompt = null;
 
     function loadAnalytics() {
         if (document.getElementById('gng-ga-script')) return;
@@ -109,6 +112,94 @@
         hideCookieBanner();
     }
 
+    function isStandaloneMode() {
+        return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    }
+
+    function isIosDevice() {
+        return /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+    }
+
+    function installBannerWasDismissedRecently() {
+        const value = Number(window.localStorage.getItem(installBannerDismissedKey) || '0');
+        return value && (Date.now() - value) < installBannerCooldownMs;
+    }
+
+    function dismissInstallBanner() {
+        window.localStorage.setItem(installBannerDismissedKey, String(Date.now()));
+        const banner = document.getElementById('install-banner');
+        if (banner) banner.hidden = true;
+    }
+
+    function ensureInstallBanner() {
+        let banner = document.getElementById('install-banner');
+        if (banner) return banner;
+
+        banner = document.createElement('div');
+        banner.id = 'install-banner';
+        banner.className = 'install-banner';
+        banner.hidden = true;
+        banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-live', 'polite');
+        document.body.appendChild(banner);
+        return banner;
+    }
+
+    function showInstallBanner(mode) {
+        if (isStandaloneMode() || installBannerWasDismissedRecently()) return;
+
+        const banner = ensureInstallBanner();
+        const message = mode === 'ios'
+            ? 'Install GNG Cricket Club on your iPhone or iPad from Safari: tap Share, then choose "Add to Home Screen".'
+            : 'Install GNG Cricket Club for faster access, a full-screen experience, and offline support.';
+        const primaryLabel = mode === 'ios' ? 'Got It' : 'Install App';
+
+        banner.innerHTML = [
+            '<div class="install-banner__title">',
+            '<img src="assets/images/icon-192.png" alt="GNG Cricket Club app icon" class="install-banner__icon" />',
+            '<div>',
+            '<p class="font-headline font-black text-lg leading-tight">Install GNG Cricket Club</p>',
+            '<p class="text-xs uppercase tracking-[0.22em] text-white/60 mt-1">Web App</p>',
+            '</div>',
+            '</div>',
+            '<p class="text-sm text-white/80 leading-relaxed">' + message + '</p>',
+            '<div class="install-banner__actions">',
+            '<button type="button" class="install-banner__button install-banner__button--primary" data-install-action="primary">' + primaryLabel + '</button>',
+            '<button type="button" class="install-banner__button install-banner__button--secondary" data-install-action="dismiss">Not Now</button>',
+            '</div>'
+        ].join('');
+
+        banner.querySelector('[data-install-action="dismiss"]').addEventListener('click', dismissInstallBanner);
+        banner.querySelector('[data-install-action="primary"]').addEventListener('click', async function () {
+            if (mode === 'ios') {
+                dismissInstallBanner();
+                return;
+            }
+
+            if (!deferredInstallPrompt) return;
+
+            deferredInstallPrompt.prompt();
+            try {
+                await deferredInstallPrompt.userChoice;
+            } finally {
+                deferredInstallPrompt = null;
+                dismissInstallBanner();
+            }
+        });
+
+        banner.hidden = false;
+    }
+
+    function registerServiceWorker() {
+        if (!('serviceWorker' in navigator)) return;
+
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('service-worker.js').catch(function () {
+                // Keep registration failure silent on this static brochure site.
+            });
+        });
+    }
+
     /* ── Mobile nav toggle ─────────────────────────────────── */
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -205,5 +296,23 @@
             showCookieBanner();
         });
     });
+
+    /* ── PWA registration + install UX ────────────────────── */
+    registerServiceWorker();
+
+    window.addEventListener('beforeinstallprompt', function (event) {
+        event.preventDefault();
+        deferredInstallPrompt = event;
+        showInstallBanner('installable');
+    });
+
+    window.addEventListener('appinstalled', function () {
+        dismissInstallBanner();
+        deferredInstallPrompt = null;
+    });
+
+    if (isIosDevice() && !isStandaloneMode()) {
+        showInstallBanner('ios');
+    }
 
 })();

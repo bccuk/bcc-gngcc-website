@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline | GNG Cricket Club</title>
+    <meta name="theme-color" content="#410003" />
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: #fcf8f8;
+            color: #1c1b1b;
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .card {
+            width: min(520px, 100%);
+            background: #ffffff;
+            border: 1px solid #ddc0bd;
+            border-radius: 20px;
+            padding: 40px 32px;
+            text-align: center;
+            box-shadow: 0 24px 60px rgba(65, 0, 3, 0.08);
+        }
+        .icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: block;
+            margin: 0 auto 24px;
+        }
+        .eyebrow {
+            color: #735c00;
+            font-weight: 800;
+            font-size: 12px;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        h1 {
+            margin: 0 0 16px;
+            font-family: "Lexend", sans-serif;
+            font-size: clamp(32px, 6vw, 44px);
+            line-height: 1;
+            color: #410003;
+        }
+        p {
+            margin: 0 0 28px;
+            color: #564240;
+            line-height: 1.7;
+        }
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 9999px;
+            background: #410003;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: "Lexend", sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <img src="assets/images/icon-192.png" alt="GNG Cricket Club app icon" class="icon" />
+        <div class="eyebrow">Offline</div>
+        <h1>You’re offline right now.</h1>
+        <p>The app shell is available, but this page could not be refreshed from the network. Reconnect and try again.</p>
+        <a href="index.html">Return Home</a>
+    </main>
+</body>
+</html>
